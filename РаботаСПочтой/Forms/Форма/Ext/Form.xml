@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Команды" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="КомандыРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Button name="ЗаполнитьПоля" id="46">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ЗаполнитьПоля</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ЗакончитьРедактированиеФайла</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнить настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаполнитьПоляРасширеннаяПодсказка" id="47"/>
+				</Button>
+				<Button name="ОтправитьПочту" id="56">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ОтправитьПочту</CommandName>
+					<ExtendedTooltip name="ОтправитьПочтуРасширеннаяПодсказка" id="57"/>
+				</Button>
+				<Button name="ПолучитьПочту" id="60">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ПолучитьПочту</CommandName>
+					<ExtendedTooltip name="ПолучитьПочтуРасширеннаяПодсказка" id="61"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Тело" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тело</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тело</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТелоРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<UsualGroup name="Сервер" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="36">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="37"/>
+							<ChildItems>
+								<InputField name="SMTPСервер" id="1">
+									<DataPath>Объект.SMTPСервер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="SMTPСерверКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="SMTPСерверРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<CheckBoxField name="ИспользоватьIMAP" id="10">
+									<DataPath>Объект.ИспользоватьIMAP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьIMAPКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ИспользоватьIMAPРасширеннаяПодсказка" id="12"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="38">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<InputField name="POP3Сервер" id="4">
+									<DataPath>Объект.POP3Сервер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="POP3СерверКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="POP3СерверРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="IMAPСервер" id="7">
+									<DataPath>Объект.IMAPСервер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="IMAPСерверКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="IMAPСерверРасширеннаяПодсказка" id="9"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ИнформацияОПользователе" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о пользователе</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о пользователе</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ИнформацияОПользователеРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="42">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="43"/>
+							<ChildItems>
+								<InputField name="Пользователь" id="13">
+									<DataPath>Объект.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользовательКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="Пароль" id="16">
+									<DataPath>Объект.Пароль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПарольКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="44">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<InputField name="АдресОтправителя" id="19">
+									<DataPath>Объект.АдресОтправителя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АдресОтправителяКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="АдресОтправителяРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="АдресПолучателя" id="22">
+									<DataPath>Объект.АдресПолучателя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АдресПолучателяКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="АдресПолучателяРасширеннаяПодсказка" id="24"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ФайлВложения" id="25">
+			<DataPath>Объект.ФайлВложения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ФайлВложенияКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ФайлВложенияРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<CommandBar name="ГруппаДокумента" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CommandSource>Item.Содержимое</CommandSource>
+			<ExtendedTooltip name="ГруппаДокументаРасширеннаяПодсказка" id="52"/>
+		</CommandBar>
+		<FormattedDocumentField name="Содержимое" id="28">
+			<DataPath>Объект.Содержимое</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СодержимоеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СодержимоеРасширеннаяПодсказка" id="30"/>
+		</FormattedDocumentField>
+		<HTMLDocumentField name="ТекстHTML" id="31">
+			<DataPath>Объект.ТекстHTML</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТекстHTMLКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ТекстHTMLРасширеннаяПодсказка" id="33"/>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РаботаСПочтой</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПоля" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить поля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить поля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоля</Action>
+		</Command>
+		<Command name="ОтправитьПочту" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить почту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить почту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПочту</Action>
+		</Command>
+		<Command name="ПолучитьПочту" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить почту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить почту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПочту</Action>
+		</Command>
+	</Commands>
+</Form>
